@@ -1,0 +1,139 @@
+body{
+    background: linear-gradient(to right, #dbf1ff, #F0F0F0);
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+nav {
+    margin-bottom: 0;
+    height: 120px;
+    color: white;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+    background-color: #F0F0F0;
+}
+
+#foto_nav {
+    color: black;
+    padding-top: 25px;
+    padding-left: 10px;
+    border-radius: 25px;
+    width: 400px;
+}
+
+#links {
+    float: right;
+    padding-top: 60px;
+    margin-right: 4%;
+}
+
+#links a {
+    color: #007EA7;
+    text-decoration: none;
+    padding: 20px;
+}
+
+
+
+section{
+    
+    text-align: center;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, .3);
+    border-radius: 18px;
+    margin-left: 20%;
+    margin-right: 20%;
+    height: 300px;
+    background-color: #F0F0F0;
+    
+
+}
+section:hover{
+    box-shadow: 0 10px 15px rgba(0, 0, 0, .3);
+    transform: scale(1.03)
+}
+
+h2:hover{
+    transform: scale(1.5)
+}
+
+
+h2{
+    margin-top: 4%;
+}
+ 
+h2 a{
+    text-decoration: none;
+    color: #003459;
+}
+
+.fotos {
+    display: flex;
+}
+
+.fotos img {
+    width: 20%; /* Garante que todas as imagens tenham a mesma largura */
+    height: auto; /* Mantém a proporção original da imagem */
+    border-radius: 18px;
+    margin-left: 3%;
+}
+
+.fotos img:first-child {
+    margin-left: 2%;
+}
+
+
+
+
+
+iframe{
+    box-shadow: 0 10px 15px rgba(0, 0, 0, .3);
+    border-radius: 18px;
+    
+}
+
+@media (max-width: 768px) {
+    #fotosemapa {
+        flex-direction: column; /* Mude para layout de coluna em telas menores */
+    }
+    .fotos {
+        flex-direction: column;
+    }
+    .fotos img{
+        width: 50%; /* Garante que todas as imagens tenham a mesma largura */
+        height: auto; /* Mantém a proporção original da imagem */
+        border-radius: 18px;
+        margin-left: 3%;
+    }
+    iframe{
+        flex-direction: column;
+        height: 100px;
+        width: 100px;
+    }
+    #maps{
+        flex-direction: column;
+        margin-left: -60%;
+        margin-top: -13.5%;
+    }
+    #paragrafo {
+        display: none;
+    }
+    section{
+        height: 300%;
+    }
+}
+ 
+
+
+#maps {
+    flex-shrink: 0; /* Impede que o mapa encolha para ajustar ao espaço disponível */
+    padding-left: 67%;
+    margin-top: -13.5%;
+}
+
+.paragrafo{
+    width: 58%;
+    margin-top: -10%;
+    font-size: small;
+    text-align: left;
+    margin-left: 2%;
+}
