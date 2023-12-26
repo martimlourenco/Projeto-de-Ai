@@ -5,7 +5,7 @@ function saveFormData() {
             const formData = {
                 firstName: firstName,
                 lastName: lastName
-            };
+            }; 
 
             const formDataJSON = JSON.stringify(formData);
 
