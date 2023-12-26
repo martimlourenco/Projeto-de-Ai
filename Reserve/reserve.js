@@ -1,12 +1,32 @@
-function clickCounter() {
-    if (typeof(Storage) !== "undefined") {
-      if (localStorage.clickcount) {
-        localStorage.clickcount = Number(localStorage.clickcount)+1;
-      } else {
-        localStorage.clickcount = 1;
-      }
-      document.getElementById("result").innerHTML = "You have clicked the button " + localStorage.clickcount + " time(s).";
-    } else {
-      document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
-    }
-  }
+function saveFormData() {
+            const firstName = document.getElementById('firstName').value;
+            const lastName = document.getElementById('lastName').value;
+
+            const formData = {
+                firstName: firstName,
+                lastName: lastName
+            };
+
+            const formDataJSON = JSON.stringify(formData);
+
+            localStorage.setItem('formData', formDataJSON);
+
+            document.getElementById('myForm').reset();
+
+            alert('Form data saved!');
+        }
+
+        function retrieveFormData() {
+            // Retrieve the JSON string from storage
+            const storedFormDataJSON = localStorage.getItem('formData');
+
+            if (storedFormDataJSON) {
+                // Parse the JSON string back into a JavaScript object
+                const storedFormData = JSON.parse(storedFormDataJSON);
+
+                // Use the data as needed
+                alert(`First Name: ${storedFormData.firstName}\nLast Name: ${storedFormData.lastName}`);
+            } else {
+                alert('No form data found.');
+            }
+        }

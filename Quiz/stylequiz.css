@@ -2,7 +2,7 @@ body{
     background: linear-gradient(to right, #dbf1ff, #F0F0F0);
     margin: 0;
     font-family: 'Poppins', sans-serif;
-    
+    background-image: url(/Quiz/imagens/azulejo-padrao-decorativo-bonito_23-2147564599.jpg);
 }
 
 
@@ -33,84 +33,6 @@ nav {
     text-decoration: none;
     padding: 20px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-form {
-  max-width: 400px;
-  margin: 0 auto;
-}
-
-label {
-  display: block;
-  margin-bottom: 8px;
-}
-
-input {
-  width: 100%;
-  padding: 8px;
-  margin-bottom: 16px;
-}
-
-button {
-  background-color: #4caf50;
-  color: white;
-  padding: 10px 15px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -184,53 +106,71 @@ footer {
 
 
 
-h1 {
-  color: #003459;
-  text-align: center;
-  filter: drop-shadow(20px 7px 5px #003459);
+
+section {
+    max-width: 600px;
+    margin: auto;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    border-radius: 18px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+    margin-top: 3%;
+    text-align: center;
+
+  }
+
+h3{
+    text-align: center;
+}
+
+p{
+    text-align: center;
 }
 
 
 
-form{
+  button {
+    background-color: #5c4caf;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    width: 220px;
+  }
+
+.cabeca{
+  color: #0b3f77;
+  text-align: center;
   border-radius: 18px;
-  background-color: white;
-  box-shadow: 0 0 30px #003459;
+  background-color: transparent;
+  backdrop-filter: blur(10px);
+  max-width: 600px;
+  align-items: center;
+  margin: auto;
 }
 
-label {
-  margin: 10px;
-}
+    /* Adição para destacar respostas com o mouse */
+    button:hover {
+      background-color: #0b3f77;
+    }
 
+    /* Adição para resposta correta e incorreta */
+    button.correct::backdrop {
+      background-color: #4caf50;
+    }
 
-input {
-  margin: 10px;
-  padding: 5px;
-  max-width: 80%;
-}
+    button.incorrect::after {
+      background-color: #ff4c4c;
+    }
 
-
-button {
-  background-color: #003459;
-  border: none;
-  color: white;
-  padding: 10px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-
-}
-
-
-button:hover {
-  background-color: #00233c;
-}
-
-
-#results {
-  text-align: center;
-  margin: 20px;
-}
+    /* Adição para a mensagem de resposta correta */
+    #correct-message {
+      display: none;
+      color: #4caf50;
+      font-weight: bold;
+      margin-top: 10px;
+    }
