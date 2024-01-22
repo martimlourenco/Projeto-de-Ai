@@ -17,7 +17,7 @@ body{
                                               /*CABECALHO background-color: #F0F0F0;*/
 nav {
     margin-bottom: 0;
-    height: 120px;
+    height: 15%;
     color: white;
     box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
     background-color: #F0F0F0;
@@ -28,12 +28,12 @@ nav {
     padding-top: 25px;
     padding-left: 10px;
     border-radius: 25px;
-    width: 400px;
+    width: 29%;
 }
 
 #links {
     float: right;
-    padding-top: 60px;
+    padding-top: 4%;
     margin-right: 4%;
 }
 
@@ -41,6 +41,10 @@ nav {
     color: #007EA7;
     text-decoration: none;
     padding: 20px;
+}
+
+#links a:hover{
+    color: #003459;
 }
                                              /* FIM DO CABECALHO */
 
@@ -316,8 +320,8 @@ iframe{
 .ratings-bottom .esquerda .bar .progress-line {
     position: relative;
     border-radius: 5px;
-    margin-left: 23%;
-    margin-top: -3%;
+    margin-left: 25%;
+    margin-top: -4.3%;
     height: 15px;
     width: 80%;
     background-color:#abaaaa ;
@@ -326,8 +330,8 @@ iframe{
 .ratings-bottom .direita .bar .progress-line {
     position: relative;
     border-radius: 5px;
-    margin-left: 23%;
-    margin-top: -3%;
+    margin-left: 25%;
+    margin-top: -4.3%;
     height: 15px;
     width: 80%;
     background-color:#abaaaa ;
@@ -379,7 +383,7 @@ iframe{
 footer {
     background-color: #848484;
     color: #fff;
-    padding: 20px 0;
+    padding: 30px 0;
 }
   
   .footer-container {
@@ -400,7 +404,6 @@ footer {
 
   
   .footer-bottom {
-    background-color: #545454;
     text-align: center;
     height: 2%;
   }

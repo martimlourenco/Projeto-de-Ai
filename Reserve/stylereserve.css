@@ -33,7 +33,9 @@ nav {
     text-decoration: none;
     padding: 20px;
 }
-
+#links a:hover{
+  color: #003459;
+}
 
 
 
