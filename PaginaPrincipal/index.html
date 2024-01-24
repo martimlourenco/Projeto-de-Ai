@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +11,7 @@
 
     <title>Vigia Guest House</title>
 </head>
+
 <body>
     <!--CABECALHO-->
     <nav>
@@ -17,229 +19,240 @@
         <div id="links">
             <a href="/Reserve/reserve.html">Reserve</a>
             <a href="/subpagina-turismo/turismo.html">Turismo</a>
-            <a href="/subpagina-fotos/fotos.html">Fotos</a>
+            <div class="dropdown">
+                <button class="dropbtn">Fotos
+                </button>
+                <div class="dropdown-content">
+                    <a href="/subpagina-fotos/fotos.html">Fotos da Casa</a>
+                    <a href="/subpagina-turismo/turismo.html">Fotos da Cidade</a>
+                </div>
+            </div>
             <a href="/Contacte/contacte.html">Contacte</a>
             <a href="/subpagina-avaliacao/avaliacao.html">Avaliação</a>
             <a href="/Quiz/quiz.html">Quiz</a>
         </div>
     </nav>
-    <!--FIM DO CABECALHO-->  
-    
+    <!--FIM DO CABECALHO-->
+
     <!--PAGINA-->
     <main>
-                <section class="contentor">
-                    <section id="slider">
-                        <div class="slides">
-                            <input type="radio" name="radio-btn" id="radio1">
-                            <input type="radio" name="radio-btn" id="radio2">
-                            <input type="radio" name="radio-btn" id="radio3">
-                            <input type="radio" name="radio-btn" id="radio4">
-                            <!--fim do radio-->
-                
-                
-                            <!--slide de imagens-->
-                            <div class="slide first">
-                                <img src="imagens/imagem1.jpg" alt="imagem1">
+        <section class="contentor">
+            <section id="slider">
+                <div class="slides">
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+                    <input type="radio" name="radio-btn" id="radio4">
+                    <!--fim do radio-->
+
+
+                    <!--slide de imagens-->
+                    <div class="slide first">
+                        <img src="imagens/imagem1.jpg" alt="imagem1">
+                    </div>
+
+                    <div class="slide">
+                        <img src="imagens/imagem2.jpg" alt="imagem2">
+                    </div>
+
+                    <div class="slide">
+                        <img src="imagens/imagem3.jpg" alt="imagem3">
+                    </div>
+
+                    <div class="slide">
+                        <img src="imagens/imagem4.jpg" alt="imagem4">
+                    </div>
+
+                    <!-- fim do slide de imagens-->
+
+                    <!--navigation auto-->
+                    <div class="navigation-auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                        <div class="auto-btn4"></div>
+                    </div>
+
+                </div>
+
+                <div class="manual-navigation">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                    <label for="radio4" class="manual-btn"></label>
+                </div>
+
+            </section>
+        </section>
+
+        <script src="js.js"></script>
+        <!--fim do slider-->
+
+
+
+
+
+
+
+        <section id="mapsepara">
+            <section id="paragrafo">
+                <p>Situada em Viseu, a 300 metros da Catedral de Viseu e a 400 metros da Igreja da Misericórdia de
+                    Viseu, a Vigia's Guest House disponibiliza acesso Wi-Fi gratuito e ar condicionado. A propriedade
+                    oferece vistas da cidade e encontra-se a 1,3 km do Festival de Música Moderna de Viseu e a 500
+                    metros do Museu Grão Vasco.
+
+                    O apartamento inclui 1 quarto, uma televisão de ecrã plano com canais por cabo, uma cozinha equipada
+                    com um micro-ondas e um frigorífico, uma máquina de lavar roupa e 1 casa de banho com um bidé. São
+                    fornecidas toalhas e roupa de cama.</p>
+            </section>
+            <section id="maps">
+                <iframe class="mapa"
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12106.381053211499!2d-7.9098803!3d40.6608514!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd233790192c8dd9%3A0x6b63b8acda5a86c9!2sVigia&#39;s%20Guest%20House!5e0!3m2!1spt-PT!2spt!4v1699638529280!5m2!1spt-PT!2spt"
+                    width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section>
+        </section>
+
+
+
+
+
+        <section class="container">
+            <div class="box-container">
+                <div class="box">
+                    <img src="imagens/icon_parking.png" alt="">
+                    <h3>Estacionamento Gratuito</h3>
+                    <p>Estacionamento gratuito e público disponível numa localização próxima (não carece de reserva)</p>
+                </div>
+                <div class="box">
+                    <img src="imagens/icon_wifi.png" alt="">
+                    <h3>Acesso Wi-Fi gratuito</h3>
+                    <p>Acesso Wi-Fi disponível por todo o hotel. Custo: Gratuito</p>
+                </div>
+                <div class="box">
+                    <img src="imagens/icon_nfumador.png" alt="">
+                    <h3>Quartos para não fumadores</h3>
+                    <p>Estacionamento gratuito e público disponível numa localização próxima (não carece de reserva)</p>
+                </div>
+                <div class="box">
+                    <img src="imagens/icon_arcondicionado.png" alt="">
+                    <h3>Ar condicionado</h3>
+                    <p>Estacionamento gratuito e público disponível numa localização próxima (não carece de reserva)</p>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+        <section class="ratings">
+            <div class="ratings-top">
+                <img src="./imagens/icon_estrela.png" id="estrela" alt="">
+                <img src="./imagens/icon_estrela.png" id="estrela" alt="">
+                <img src="./imagens/icon_estrela.png" id="estrela" alt="">
+                <img src="./imagens/icon_estrela.png" id="estrela" alt="">
+                <img src="./imagens/icon_estrelavazia.png" id="estrelavazia" alt="">
+                <h3 style="margin-left: 13%; margin-top: -2.5%; padding-left: 7px;">4 Estrelas <img
+                        src="./imagens/icon_ponto.png" id="ponto" alt="">193 Reviews</h3>
+            </div>
+            <div class="ratings-bottom">
+                <div class="esquerda">
+                    <div class="bar">
+                        <div class="info">
+                            <span><b>Funcionários: </b></span>
+                            <div class="progress-line">
+                                <span></span>
                             </div>
-                
-                            <div class="slide">
-                                <img src="imagens/imagem2.jpg" alt="imagem2">
-                            </div>
-                
-                            <div class="slide">
-                                <img src="imagens/imagem3.jpg" alt="imagem3">
-                            </div>
-                
-                            <div class="slide">
-                                <img src="imagens/imagem4.jpg" alt="imagem4">
-                            </div>
-                
-                            <!-- fim do slide de imagens-->
-                
-                            <!--navigation auto-->
-                            <div class="navigation-auto">
-                                <div class="auto-btn1"></div>
-                                <div class="auto-btn2"></div>
-                                <div class="auto-btn3"></div>
-                                <div class="auto-btn4"></div>
-                            </div>
-                
-                        </div>
-    
-                        <div class="manual-navigation">
-                            <label for="radio1" class="manual-btn"></label>
-                            <label for="radio2" class="manual-btn"></label>
-                            <label for="radio3" class="manual-btn"></label>
-                            <label for="radio4" class="manual-btn"></label>
-                        </div>
-    
-                    </section>
-                </section>
-
-                <script src="js.js"></script>
-                   <!--fim do slider-->
-
-
-
-
-
-
-
-                <section id="mapsepara">
-                    <section id="paragrafo">
-                        <p>Situada em Viseu, a 300 metros da Catedral de Viseu e a 400 metros da Igreja da Misericórdia de
-                            Viseu, a Vigia's Guest House disponibiliza acesso Wi-Fi gratuito e ar condicionado. A propriedade
-                            oferece vistas da cidade e encontra-se a 1,3 km do Festival de Música Moderna de Viseu e a 500
-                            metros do Museu Grão Vasco.
-        
-                            O apartamento inclui 1 quarto, uma televisão de ecrã plano com canais por cabo, uma cozinha equipada
-                            com um micro-ondas e um frigorífico, uma máquina de lavar roupa e 1 casa de banho com um bidé. São
-                            fornecidas toalhas e roupa de cama.</p>
-                    </section>
-                    <section id="maps">
-                        <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12106.381053211499!2d-7.9098803!3d40.6608514!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd233790192c8dd9%3A0x6b63b8acda5a86c9!2sVigia&#39;s%20Guest%20House!5e0!3m2!1spt-PT!2spt!4v1699638529280!5m2!1spt-PT!2spt" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </section>
-                </section>
-
-
-
-
-
-                <section class="container">
-                    <div class="box-container">
-                        <div class="box">
-                            <img src="imagens/icon_parking.png" alt="">
-                            <h3>Estacionamento Gratuito</h3>
-                            <p>Estacionamento gratuito e público disponível numa localização próxima (não carece de reserva)</p>
-                        </div>
-                        <div class="box">
-                            <img src="imagens/icon_wifi.png" alt="">
-                            <h3>Acesso Wi-Fi gratuito</h3>
-                            <p>Acesso Wi-Fi disponível por todo o hotel. Custo: Gratuito</p>
-                        </div>
-                        <div class="box">
-                            <img src="imagens/icon_nfumador.png" alt="">
-                            <h3>Quartos para não fumadores</h3>
-                            <p>Estacionamento gratuito e público disponível numa localização próxima (não carece de reserva)</p>
-                        </div>
-                        <div class="box">
-                            <img src="imagens/icon_arcondicionado.png" alt="">
-                            <h3>Ar condicionado</h3>
-                            <p>Estacionamento gratuito e público disponível numa localização próxima (não carece de reserva)</p>
                         </div>
                     </div>
-                </section>
-
-
-
-
-
-
-
-                <section class="ratings">
-                    <div class="ratings-top">
-                        <img src="./imagens/icon_estrela.png" id="estrela" alt="">
-                        <img src="./imagens/icon_estrela.png" id="estrela" alt="">
-                        <img src="./imagens/icon_estrela.png" id="estrela" alt="">
-                        <img src="./imagens/icon_estrela.png" id="estrela" alt="">
-                        <img src="./imagens/icon_estrelavazia.png" id="estrelavazia" alt="">
-                        <h3 style="margin-left: 13%; margin-top: -2.5%; padding-left: 7px;">4 Estrelas <img
-                                src="./imagens/icon_ponto.png" id="ponto" alt="">193 Reviews</h3>
+                    <div class="bar">
+                        <div class="info">
+                            <span><b>Conforto: </b></span>
+                            <div class="progress-line">
+                                <span></span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="ratings-bottom">
-                        <div class="esquerda">
-                            <div class="bar">
-                                <div class="info">
-                                    <span><b>Funcionários: </b></span>
-                                    <div class="progress-line">
-                                        <span></span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="bar">
-                                <div class="info">
-                                    <span><b>Conforto: </b></span>
-                                    <div class="progress-line">
-                                        <span></span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="bar">
-                                <div class="info">
-                                    <span><b>Wi-fi Gratúito: </b></span>
-                                    <div class="progress-line">
-                                        <span></span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="bar">
-                                <div class="info">
-                                    <span><b>Comodidades: </b></span>
-                                    <div class="progress-line">
-                                        <span></span>
-                                    </div>
-                                </div>
+                    <div class="bar">
+                        <div class="info">
+                            <span><b>Wi-fi Gratúito: </b></span>
+                            <div class="progress-line">
+                                <span></span>
                             </div>
                         </div>
-                        <div class="direita">
-                            <div class="bar">
-                                <div class="info">
-                                    <span><b>Qualidade: </b></span>
-                                    <div class="progress-line">
-                                        <span></span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="bar">
-                                <div class="info">
-                                    <span><b>Limpeza: </b></span>
-                                    <div class="progress-line">
-                                        <span></span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="bar">
-                                <div class="info">
-                                    <span><b>Localização: </b></span>
-                                    <div class="progress-line">
-                                        <span></span>
-                                    </div>
-                                </div>
+                    </div>
+                    <div class="bar">
+                        <div class="info">
+                            <span><b>Comodidades: </b></span>
+                            <div class="progress-line">
+                                <span></span>
                             </div>
                         </div>
-                    </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-                </section>
-    </main> 
+                    </div>
+                </div>
+                <div class="direita">
+                    <div class="bar">
+                        <div class="info">
+                            <span><b>Qualidade: </b></span>
+                            <div class="progress-line">
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bar">
+                        <div class="info">
+                            <span><b>Limpeza: </b></span>
+                            <div class="progress-line">
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bar">
+                        <div class="info">
+                            <span><b>Localização: </b></span>
+                            <div class="progress-line">
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        </section>
+    </main>
 
-                                         <!--inico footer-->
+    <!--inico footer-->
 
     <footer>
         <div class="footer-container">
-          <div class="footer-logo">
-            <img src="/paginaPrincipal/imagens/logo-removebg-preview.png" alt="Logo">
-          </div>
+            <div class="footer-logo">
+                <img src="/paginaPrincipal/imagens/logo-removebg-preview.png" alt="Logo">
+            </div>
 
 
-          <div class="footer-info">
-            <a href="/Developers/developers.html">Developers</a>
-          </div>
+            <div class="footer-info">
+                <a href="/Developers/developers.html">Developers</a>
+            </div>
 
 
-          <div class="footer-paginas">
-            <a href="/subpagina-turismo/turismo.html">Turismo</a>
-            <a href="/subpagina-fotos/fotos.html">Fotos</a>
-            <a href="">Contacte</a>
-            <a href="">Avaliação</a>
-            <a href="">Quiz</a>
-          </div>
+            <div class="footer-paginas">
+                <a href="/subpagina-turismo/turismo.html">Turismo</a>
+                <a href="/subpagina-fotos/fotos.html">Fotos</a>
+                <a href="">Contacte</a>
+                <a href="">Avaliação</a>
+                <a href="">Quiz</a>
+            </div>
 
         </div>
         <div class="footer-bottom">
-          <p>&copy; 2023 Vigia Guest House. Todos os direitos reservados.</p>
-          <p id="time"></p>
+            <p>&copy; 2023 Vigia Guest House. Todos os direitos reservados.</p>
+            <p id="time"></p>
         </div>
 
-      </footer>
+    </footer>
 
 </body>
+
 </html>
