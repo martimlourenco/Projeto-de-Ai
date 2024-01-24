@@ -41,9 +41,6 @@ nav {
 
 
 
-
-
-
 .gallery img {
     width: 550px;
     height: 300px;
@@ -51,6 +48,7 @@ nav {
     margin-top: 1%;
     box-shadow: 0 20px 25px rgba(0, 0, 0, .3);
     border-radius: 18px;
+    
 }
 
 
