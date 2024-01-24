@@ -219,6 +219,7 @@ nav {
     background-color: #fff;
 }
 
+
 /*  FIM DO SLIDER DE IMAGENS */
 
 
@@ -330,12 +331,11 @@ iframe {
 
 
 .ratings {
-    margin-top: 6%;
+    margin-top: 3%; /* Ajuste conforme necessário */
 }
 
 .ratings .ratings-top {
-    margin-left: 6%;
-    margin-right: 6%;
+    margin: 0 6%; /* Ajuste conforme necessário */
 }
 
 .ratings .ratings-top #estrela {
@@ -347,63 +347,42 @@ iframe {
 }
 
 .ratings .ratings-top #ponto {
-    width: 10px;
-    padding-left: 2px;
-    padding-right: 5px;
+    width: 0.5em;
+    padding: 0 2px; /* Ajuste conforme necessário */
 }
 
 .ratings .ratings-bottom {
     margin-top: 3%;
-    margin-left: 3%;
-    margin-right: 6%;
+    margin: 0 3% 3% 3%; /* Ajuste conforme necessário */
 }
 
 .ratings-bottom .bar {
-    margin: 4%;
+    margin: 4% 0; /* Ajuste conforme necessário */
 }
-
 .ratings-bottom .esquerda {
     float: left;
+    margin-left: 2%;
     width: 40%;
 }
 
 .ratings-bottom .direita {
     float: right;
     margin-left: 2%;
-    width: 40%;
+    width: 50%;
 }
 
-.ratings-bottom .esquerda .bar .progress-line {
+
+.ratings-bottom .bar .progress-line {
     position: relative;
     border-radius: 5px;
-    margin-left: 25%;
-    margin-top: -4.3%;
-    height: 15px;
+    margin: 0;
+    height: 1em;
     width: 80%;
     background-color: #abaaaa;
     box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.05), 0px 1px rgba(255, 255, 255, 0.8);
 }
 
-.ratings-bottom .direita .bar .progress-line {
-    position: relative;
-    border-radius: 5px;
-    margin-left: 25%;
-    margin-top: -4.3%;
-    height: 15px;
-    width: 80%;
-    background-color: #abaaaa;
-    box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.05), 0px 1px rgba(255, 255, 255, 0.8);
-}
-
-.ratings-bottom .esquerda .bar .progress-line span {
-    height: 100%;
-    border-radius: 5px;
-    width: 80%;
-    background: #003459;
-    position: absolute;
-}
-
-.ratings-bottom .direita .bar .progress-line span {
+.ratings-bottom .bar .progress-line span {
     height: 100%;
     border-radius: 5px;
     width: 80%;
@@ -447,25 +426,23 @@ footer {
 
 .footer-container {
     display: flex;
-
-
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 5%;
 }
 
 .footer-logo img {
     width: 50px;
     height: auto;
-
 }
 
 .footer-logo {
-    margin-left: 5%;
-    margin-top: -0.5%;
+    margin-left: 0;
 }
-
 
 .footer-bottom {
     text-align: center;
-    height: 2%;
     width: 100%;
 }
 
@@ -473,44 +450,22 @@ footer {
     margin: 0;
 }
 
-.footer-info {
-    display: flex;
-    flex-direction: row;
-    margin-left: 0;
-    margin-top: -1%;
-}
-
-
-.footer-info a {
-    color: #ffffff;
-    text-decoration: none;
-    padding: 20px;
-}
 
 .footer-paginas {
     display: flex;
     flex-direction: row;
-    margin-right: 2%;
-    margin-left: 45%;
+    justify-content: center;
+    align-items: center;
     margin-top: -1%;
+    padding-left: 25%;
+    flex-wrap: wrap;
+    padding-left: 0;
 }
 
-@media only screen and (max-width: 768px) {
-    .footer-paginas {
-        margin-left: -40.2%; /* Remove left margin for smaller screens */
-        margin-top: 5%; /* Adjust top margin if needed */
-        justify-content: center; /* Center the content horizontally */
-        padding: 0;
-    }
 
-    .footer-info {
-        margin-left: 0%; /* Remove left margin for smaller screens */   
-        justify-content: center; /* Center the content horizontally */
-        padding: 0;
-    }
-}
 .footer-paginas a {
     color: #ffffff;
     text-decoration: none;
-    padding: 20px;
+    padding: 10px;
+    margin: 0 5px; /* Adicione margem entre os links */
 }
