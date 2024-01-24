@@ -1,10 +1,9 @@
-
-body{
+body {
     background: linear-gradient(to right, #dbf1ff, #F0F0F0);
     margin: 0;
     font-family: 'Poppins', sans-serif;
-    
-    
+
+
 }
 
 
@@ -15,14 +14,14 @@ body{
 
 
 
-                                              /*CABECALHO background-color: #F0F0F0;*/
+/*CABECALHO background-color: #F0F0F0;*/
 nav {
-    margin-bottom: 0;
     height: 20%;
     width: 100%;
     color: white;
     box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
     background-color: #F0F0F0;
+    overflow: hidden;
 }
 
 #foto_nav {
@@ -32,6 +31,7 @@ nav {
     border-radius: 2%;
     width: 29%;
     height: 100%;
+    float: left;
 }
 
 #links {
@@ -43,13 +43,15 @@ nav {
 #links a {
     color: #007EA7;
     text-decoration: none;
-    padding: 1em;
+    padding: 1.5em;
 }
 
-#links a:hover{
+#links a:hover {
     color: #003459;
 }
-                                             /* FIM DO CABECALHO */
+
+
+/* FIM DO CABECALHO */
 
 
 
@@ -65,18 +67,18 @@ nav {
 
 
 
-                                             /* SLIDER DE IMAGENS */
+/* SLIDER DE IMAGENS */
 
 
-.contentor{
+.contentor {
     padding-top: 2%;
     padding-left: 24%;
     width: 66.67%;
 
-}  
+}
 
 
-#slider{
+#slider {
     margin: o auto;
     width: 800px;
     height: 400px;
@@ -85,27 +87,27 @@ nav {
 }
 
 
-.slides{
+.slides {
     width: 400%;
     height: 400px;
     display: flex;
 }
 
-.slides input{
+.slides input {
     display: none;
 }
 
-.slide{
+.slide {
     width: 25%;
     position: relative;
     transition: 2s;
 }
 
-.slide img{
+.slide img {
     width: 800px;
 }
 
-.manual-navigation{
+.manual-navigation {
     position: absolute;
     width: 800px;
     margin-top: -40px;
@@ -113,7 +115,7 @@ nav {
     justify-content: center;
 }
 
-.manual-btn{
+.manual-btn {
     border: 2px solid #fff;
     padding: 5px;
     border-radius: 10px;
@@ -121,30 +123,31 @@ nav {
     transition: 1s;
 }
 
-.manual-btn:not(:last-child){
+.manual-btn:not(:last-child) {
     margin-right: 40px;
 }
 
-.manual-btn:hover{
+.manual-btn:hover {
     background-color: #fff;
 }
 
-#radio1:checked ~ .first{
+#radio1:checked~.first {
     margin-left: 0;
 }
 
-#radio2:checked ~ .first{
+#radio2:checked~.first {
     margin-left: -25%;
 }
-#radio3:checked ~ .first{
+
+#radio3:checked~.first {
     margin-left: -50%;
 }
 
-#radio4:checked ~ .first{
+#radio4:checked~.first {
     margin-left: -75%;
 }
 
-.navigation-auto div{
+.navigation-auto div {
     border: 2px solid blue;
     padding: 5px;
     border-radius: 10px;
@@ -152,7 +155,7 @@ nav {
     transition: 1s;
 }
 
-.navigation-auto{
+.navigation-auto {
     position: absolute;
     width: 800px;
     margin-top: 360px;
@@ -160,71 +163,78 @@ nav {
     justify-content: center;
 }
 
-.navigation-auto div:not(:last-child){
+.navigation-auto div:not(:last-child) {
     margin-right: 40px;
 }
 
-#radio1:checked ~ .navigation-auto .auto-btn1{
+#radio1:checked~.navigation-auto .auto-btn1 {
     background-color: #fff;
 }
 
-#radio2:checked ~ .navigation-auto .auto-btn2{
-    background-color: #fff;
-}
-#radio3:checked ~ .navigation-auto .auto-btn3{
-    background-color: #fff;
-}
-#radio4:checked ~ .navigation-auto .auto-btn4{
+#radio2:checked~.navigation-auto .auto-btn2 {
     background-color: #fff;
 }
 
-                                             /*  FIM DO SLIDER DE IMAGENS */
+#radio3:checked~.navigation-auto .auto-btn3 {
+    background-color: #fff;
+}
+
+#radio4:checked~.navigation-auto .auto-btn4 {
+    background-color: #fff;
+}
+
+/*  FIM DO SLIDER DE IMAGENS */
 
 
 
 
 
 
-                                              /* PARAGRAFO */   
-                                              
-                                              
+/* PARAGRAFO */
 
 
 
 
 
 
- #mapsepara {
+
+
+#mapsepara {
     display: flex;
     padding-top: 2%;
 }
 
 #paragrafo {
-    width: 48%; /* Defina a largura desejada para o bloco de texto */
+    width: 48%;
+    /* Defina a largura desejada para o bloco de texto */
     padding-left: 5%;
-     
+
 }
 
 #maps {
     padding-left: 5%;
-    
+
 }
-iframe{
+
+iframe {
     box-shadow: 0 10px 15px rgba(0, 0, 0, .3);
     border-radius: 18px;
 }
 
 @media (max-width: 768px) {
     #mapsepara {
-        flex-direction: column; /* Mude para layout de coluna em telas menores */
+        flex-direction: column;
+        /* Mude para layout de coluna em telas menores */
     }
 
-    #paragrafo, #maps {
-        width: 100%; /* Ocupa 100% da largura em telas menores */
+    #paragrafo,
+    #maps {
+        width: 90%;
+        /* Ocupa 100% da largura em telas menores */
     }
 }
- 
-#maps .mapa:hover{
+
+#maps .mapa:hover {
     box-shadow: 0 10px 15px rgba(0, 0, 0, .3);
     transform: scale(1.03)
 }
@@ -283,38 +293,45 @@ iframe{
 }
 
 
-.ratings{
+.ratings {
     margin-top: 6%;
 }
-.ratings .ratings-top{
+
+.ratings .ratings-top {
     margin-left: 6%;
     margin-right: 6%;
 }
-.ratings .ratings-top #estrela{
+
+.ratings .ratings-top #estrela {
     width: 30px;
 }
-.ratings .ratings-top #estrelavazia{
+
+.ratings .ratings-top #estrelavazia {
     width: 27px;
 }
-.ratings .ratings-top #ponto{
+
+.ratings .ratings-top #ponto {
     width: 10px;
     padding-left: 2px;
     padding-right: 5px;
 }
-.ratings .ratings-bottom{
+
+.ratings .ratings-bottom {
     margin-top: 3%;
     margin-left: 3%;
     margin-right: 6%;
 }
-.ratings-bottom .bar{
+
+.ratings-bottom .bar {
     margin: 4%;
 }
 
-.ratings-bottom .esquerda{
+.ratings-bottom .esquerda {
     float: left;
     width: 40%;
 }
-.ratings-bottom .direita{
+
+.ratings-bottom .direita {
     float: right;
     margin-left: 2%;
     width: 40%;
@@ -327,9 +344,10 @@ iframe{
     margin-top: -4.3%;
     height: 15px;
     width: 80%;
-    background-color:#abaaaa ;
+    background-color: #abaaaa;
     box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.05), 0px 1px rgba(255, 255, 255, 0.8);
 }
+
 .ratings-bottom .direita .bar .progress-line {
     position: relative;
     border-radius: 5px;
@@ -337,18 +355,11 @@ iframe{
     margin-top: -4.3%;
     height: 15px;
     width: 80%;
-    background-color:#abaaaa ;
+    background-color: #abaaaa;
     box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.05), 0px 1px rgba(255, 255, 255, 0.8);
 }
 
-.ratings-bottom .esquerda .bar .progress-line span{
-    height: 100%;
-    border-radius: 5px;
-    width: 80%;
-    background: #003459;
-    position: absolute;
-}
-.ratings-bottom .direita .bar .progress-line span{
+.ratings-bottom .esquerda .bar .progress-line span {
     height: 100%;
     border-radius: 5px;
     width: 80%;
@@ -356,6 +367,13 @@ iframe{
     position: absolute;
 }
 
+.ratings-bottom .direita .bar .progress-line span {
+    height: 100%;
+    border-radius: 5px;
+    width: 80%;
+    background: #003459;
+    position: absolute;
+}
 
 
 
@@ -381,46 +399,50 @@ iframe{
 
 
 
-                                                  /* footer */
+
+/* footer */
 
 footer {
     background-color: #848484;
     color: #fff;
-    padding: 30px 0;
+    padding: 2% 0;
+    width: 100%;
 }
-  
-  .footer-container {
-    display: flex;
-    height: 50px;
-  }
-  
-  .footer-logo img {
-    width: 50px; 
-    height: auto;
-    
-  }
 
-.footer-logo{
+.footer-container {
+    display: flex;
+
+
+}
+
+.footer-logo img {
+    width: 50px;
+    height: auto;
+
+}
+
+.footer-logo {
     margin-left: 5%;
     margin-top: -0.5%;
 }
 
-  
-  .footer-bottom {
+
+.footer-bottom {
     text-align: center;
     height: 2%;
-  }
-  
-  .footer-bottom p {
-    margin: 0;
-  }
+    width: 100%;
+}
 
-  .footer-info {
+.footer-bottom p {
+    margin: 0;
+}
+
+.footer-info {
     display: flex;
     flex-direction: row;
     margin-left: 0;
     margin-top: -1%;
-  }
+}
 
 
 .footer-info a {
@@ -432,12 +454,25 @@ footer {
 .footer-paginas {
     display: flex;
     flex-direction: row;
-    margin-right: 0;
+    margin-right: 2%;
     margin-left: 45%;
     margin-top: -1%;
-  }
+}
 
+@media only screen and (max-width: 768px) {
+    .footer-paginas {
+        margin-left: -40.2%; /* Remove left margin for smaller screens */
+        margin-top: 5%; /* Adjust top margin if needed */
+        justify-content: center; /* Center the content horizontally */
+        padding: 0;
+    }
 
+    .footer-info {
+        margin-left: 0%; /* Remove left margin for smaller screens */   
+        justify-content: center; /* Center the content horizontally */
+        padding: 0;
+    }
+}
 .footer-paginas a {
     color: #ffffff;
     text-decoration: none;
