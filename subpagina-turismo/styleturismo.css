@@ -192,11 +192,6 @@ iframe{
 }
 
 
-
-
-
-
-
 /* footer */
 
 footer {
@@ -245,10 +240,9 @@ footer {
     padding-left: 0;
 }
 
-
 .footer-paginas a {
     color: #ffffff;
     text-decoration: none;
     padding: 10px;
-    margin: 0 5px; /* Adicione margem entre os links */
+    margin: 0 5px; 
 }
