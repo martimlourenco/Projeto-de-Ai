@@ -51,6 +51,7 @@ const ContactForm = () => {
             name="email"
             value={formData.email}
             onChange={handleChange}
+          
           />
         </label>
         <br />
@@ -61,7 +62,7 @@ const ContactForm = () => {
             name="message" id="message"
             value={formData.message}
             onChange={handleChange}
-            style={{ height: '100px', width: '300px' }}
+            style={{ height: '100px' }}
           />
         </label>
         <br />
