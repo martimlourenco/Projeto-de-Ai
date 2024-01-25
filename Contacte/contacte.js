@@ -3,8 +3,16 @@ const ContactForm = () => {
     firstName: '',
     lastName: '',
     email: '',
-    message: '', // Adicionando um novo campo para a mensagem
+    message: '',
   });
+
+  React.useEffect(() => {
+    // Carrega os dados do armazenamento local ao montar o componente
+    const savedFormData = localStorage.getItem('formData');
+    if (savedFormData) {
+      setFormData(JSON.parse(savedFormData));
+    }
+  }, []);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -17,15 +25,25 @@ const ContactForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log('Form submitted:', formData);
-    // Adicione a lógica de envio do formulário aqui
+    // Exibe mensagem de sucesso
+    alert('Formulário enviado com sucesso!');
+    // Limpa os dados do formulário
+    setFormData({
+      firstName: '',
+      lastName: '',
+      email: '',
+      message: '',
+    });
+    // Salva os dados do formulário no armazenamento local
+    localStorage.setItem('formData', JSON.stringify(formData));
   };
 
   return (
     <div>
-      <h1>Contact Form Example</h1>
+      <h1>Contacte-nos!</h1>
       <form onSubmit={handleSubmit}>
         <label>
-          First Name:
+          Nome:
           <input
             type="text"
             name="firstName"
@@ -35,7 +53,7 @@ const ContactForm = () => {
         </label>
         <br />
         <label>
-          Last Name:
+          Apelido:
           <input
             type="text"
             name="lastName"
@@ -51,22 +69,20 @@ const ContactForm = () => {
             name="email"
             value={formData.email}
             onChange={handleChange}
-          
           />
         </label>
         <br />
         <label>
-          Message:
+          Mensagem:
           <input
             type="text"
-            name="message" id="message"
+            name="message"
             value={formData.message}
             onChange={handleChange}
-            style={{ height: '100px' }}
           />
         </label>
         <br />
-        <button type="submit">Submit</button>
+        <button id="a" type="submit">Enviar</button>
       </form>
     </div>
   );

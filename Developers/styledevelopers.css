@@ -154,65 +154,54 @@ h2{
 
 
 footer {
-    background-color: #848484;
-    color: #fff;
-    padding: 20px 0;
-    margin-top: 2%;
-    margin-bottom: 0;
-}
-  
-  .footer-container {
-    display: flex;
-    height: 50px;
-  }
-  
-  .footer-logo img {
-    width: 50px; 
-    height: auto;
-    
-  }
-
-.footer-logo{
-    margin-left: 5%;
-    margin-top: -0.5%;
+  background-color: #848484;
+  color: #fff;
+  padding: 2% 0;
+  width: 100%;
 }
 
-  
-  .footer-bottom {
-    
-    text-align: center;
-    height: 2%;
-  }
-  
-  .footer-bottom p {
-    margin: 0;
-  }
-
-  .footer-info {
-    display: flex;
-    flex-direction: row;
-    margin-left: 0;
-    margin-top: -1%;
-  }
-
-
-.footer-info a {
-    color: #ffffff;
-    text-decoration: none;
-    padding: 20px;
+.footer-container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 5%;
 }
+
+.footer-logo img {
+  width: 50px;
+  height: auto;
+}
+
+.footer-logo {
+  margin-left: 0;
+}
+
+.footer-bottom {
+  text-align: center;
+  width: 100%;
+}
+
+.footer-bottom p {
+  margin: 0;
+}
+
 
 .footer-paginas {
-    display: flex;
-    flex-direction: row;
-    margin-right: 0;
-    margin-left: 45%;
-    margin-top: -1%;
-  }
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: -1%;
+  padding-left: 25%;
+  flex-wrap: wrap;
+  padding-left: 0;
+}
 
 
 .footer-paginas a {
-    color: #ffffff;
-    text-decoration: none;
-    padding: 20px;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px;
+  margin: 0 5px; /* Adicione margem entre os links */
 }

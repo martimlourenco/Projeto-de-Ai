@@ -85,30 +85,27 @@ nav {
 
 
 .gallery img {
-    width: 550px;
-    height: 300px;
-    margin-left: 1%; 
-    margin-top: 1%;
-    box-shadow: 0 20px 25px rgba(0, 0, 0, .3);
-    border-radius: 18px;
-    
+  width: 32%; /* Ajusta a largura para 90% do contêiner pai */
+  height: 20vw; /* Mantém a proporção da imagem */
+  margin-left: 1%; /* Define a margem esquerda como 1% */
+  margin-top: 1%; /* Define a margem superior como 1% */
+  box-shadow: 0 2vw 2.5vw rgba(0, 0, 0, .3); /* Utiliza unidades de viewport para a sombra */
+  border-radius: 2.5vw; /* Utiliza unidades de viewport para a borda arredondada */
 }
-
 
 .gallery-row {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px; 
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2vw; /* Utiliza unidades de viewport para a margem inferior */
 }
-
 
 .gallery-row img:first-child {
-    margin-left: 1%; 
+  margin-left: 1%; /* Define a margem esquerda como 1% */
 }
 
-.gallery-row img:last-child{
-    margin-right: 1%;
-    margin-bottom: 1.5%;
+.gallery-row img:last-child {
+  margin-right: 1%; /* Define a margem direita como 1% */
+  margin-bottom: 1.5vw; /* Utiliza unidades de viewport para a margem inferior */
 }
 
 
@@ -135,7 +132,6 @@ footer {
   color: #fff;
   padding: 2% 0;
   width: 100%;
- 
 }
 
 .footer-container {
