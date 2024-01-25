@@ -2,7 +2,7 @@ body {
   background: linear-gradient(to right, #dbf1ff, #F0F0F0);
   margin: 0;
   font-family: 'Poppins', sans-serif;
-
+  cursor: url('/PaginaPrincipal/imagens/cursor.png'), auto;
 
 }
 
