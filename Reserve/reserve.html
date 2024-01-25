@@ -1,100 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="stylereserve.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap">
-    <link rel="icon" href="/PaginaPrincipal/imagens/logo-removebg-preview.png" type="image/x-icon">
-    <script src="/time.js" async></script>
-    <title>Developers</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="stylereserve.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap">
+  <link rel="icon" href="/PaginaPrincipal/imagens/logo-removebg-preview.png" type="image/x-icon">
+  <script src="/time.js" async></script>
+  <title>Developers</title>
 </head>
+
 <body>
   <nav>
     <a href="/PaginaPrincipal/index.html"><img src="/PaginaPrincipal/imagens/nav.png" id="foto_nav" alt="logo"></a>
-    
+
     <div id="links">
-        <a href="/Reserve/reserve.html">Reserve</a>
-        <a href="/subpagina-turismo/turismo.html">Turismo</a>
-        <div class="dropdown">
-            <button class="dropbtn">Fotos
-            </button>
-            <div class="dropdown-content">
-                <a href="/subpagina-fotos/fotos.html">Fotos da Casa</a>
-                <a href="/subpagina-fotos/fotoscidade.html">Fotos da Cidade</a>
-            </div>
+      <a href="/Reserve/reserve.html">Reserve</a>
+      <a href="/subpagina-turismo/turismo.html">Turismo</a>
+      <div class="dropdown">
+        <button class="dropbtn">Fotos
+        </button>
+        <div class="dropdown-content">
+          <a href="/subpagina-fotos/fotos.html">Fotos da Casa</a>
+          <a href="/subpagina-fotos/fotoscidade.html">Fotos da Cidade</a>
         </div>
-        <a href="/Contacte/contacte.html">Contacte</a>
-        <a href="/subpagina-avaliacao/avaliacao.html">Avaliação</a>
-        <a href="/Quiz/quiz.html">Quiz</a>
+      </div>
+      <a href="/Contacte/contacte.html">Contacte</a>
+      <a href="/subpagina-avaliacao/avaliacao.html">Avaliação</a>
+      <a href="/Quiz/quiz.html">Quiz</a>
     </div>
-</nav>
+  </nav>
 
 
 
-    <h1>Disponibilidade e Preços</h1>
+  <h1>Disponibilidade e Preços</h1>
 
-    <form id="form-availability">
+  <form id="form-availability">
 
-        <label for="check-in">Data de check-in:</label>
+    <label for="check-in">Data de check-in:</label>
 
-        <input type="date" id="check-in" name="check-in" required>
-
-
-        <label for="check-out">Data de check-out:</label>
-
-        <input type="date" id="check-out" name="check-out" required>
+    <input type="date" id="check-in" name="check-in" required>
 
 
-        <label for="adults">Adultos:</label>
+    <label for="check-out">Data de check-out:</label>
 
-        <input type="number" id="adults" name="adults" min="0" max="99" required>
-
-
-        <label for="children">Crianças:</label>
-
-        <input type="number" id="children" name="children" min="0" max="99" required>
+    <input type="date" id="check-out" name="check-out" required>
 
 
+    <label for="adults">Adultos:</label>
+
+    <input type="number" id="adults" name="adults" min="0" max="99" required>
 
 
-        <button id="a" href="">Pesquisar</button>
+    <label for="children">Crianças:</label>
 
-    </form>
-
-    <div id="results"></div>
+    <input type="number" id="children" name="children" min="0" max="99" required>
 
 
 
 
-     
-    <script src="reserve.js"></script>
+    <button id="a" href="">Pesquisar</button>
+
+  </form>
+
+  <div id="results"></div>
 
 
 
 
-    <footer>
-      <div class="footer-container">
-          <div class="footer-logo">
-              <img src="/PaginaPrincipal/imagens/logo-removebg-preview.png" alt="Logo">
-          </div>
 
-          <div class="footer-paginas">
-              <a href="/Developers/developers.html">Developers</a>
-              <a href="/subpagina-turismo/turismo.html">Turismo</a>
-              <a href="/subpagina-fotos/fotos.html">Fotos</a>
-              <a href="">Contacte</a>
-              <a href="">Avaliação</a>
-              <a href="">Quiz</a>
-          </div>
+  <script src="reserve.js"></script>
 
+
+
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-logo">
+        <img src="/PaginaPrincipal/imagens/logo-removebg-preview.png" alt="Logo">
       </div>
-      <div class="footer-bottom">
-          <p>&copy; 2023 Vigia Guest House. Todos os direitos reservados.</p>
-          <p id="time"></p>
+
+      <div class="footer-paginas">
+        <a href="/Developers/developers.html">Developers</a>
+        <a href="/subpagina-turismo/turismo.html">Turismo</a>
+        <a href="/subpagina-fotos/fotos.html">Fotos</a>
+        <a href="">Contacte</a>
+        <a href="">Avaliação</a>
+        <a href="">Quiz</a>
       </div>
+
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2023 Vigia Guest House. Todos os direitos reservados.</p>
+      <p id="time"></p>
+    </div>
 
   </footer>
 
 </body>
+
 </html>
