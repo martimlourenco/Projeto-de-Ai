@@ -226,43 +226,39 @@ nav {
 
 #mapsepara {
     display: flex;
+    flex-wrap: wrap; /* Permite que os itens quebrem para a linha seguinte */
+    gap: 5%; /* Espaço entre os itens */
     padding-top: 4%;
+    margin-bottom: 10%;
 }
 
 #paragrafo {
-    width: 48%;
-    /* Defina a largura desejada para o bloco de texto */
-    padding-left: 5%;
-
+    width: 48%; /* Ajusta a largura do elemento para 48% da largura do contêiner pai */
+    margin-left: 10%;
 }
 
 #maps {
-    padding-left: 5%;
-    margin-left: 7%;
+    width: 37%; /* Ajusta a largura do elemento para 45% da largura do contêiner pai */
+    margin-left: auto; /* Move o elemento para a direita para ocupar o espaço restante */
+    position: relative; /* Define posição relativa para que a posição absoluta funcione */
 }
 
 #maps .mapa:hover {
-    box-shadow: 0 10px 15px rgba(0, 0, 0, .3);
-    transform: scale(1.03)
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+    transform: scale(1.03);
 }
 
 iframe {
-    box-shadow: 0 10px 15px rgba(0, 0, 0, .3);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
     border-radius: 18px;
+    width: 85%; /* Faz com que o iframe ocupe toda a largura do contêiner pai (#maps) */
+    height: 300px; /* Defina a altura desejada para o iframe */
+    position: absolute; /* Define posição absoluta para que o iframe ocupe todo o espaço disponível */
+    top: 0; /* Alinha o iframe ao topo do contêiner pai */
+    left: 0; /* Alinha o iframe à esquerda do contêiner pai */
 }
 
-@media (max-width: 768px) {
-    #mapsepara {
-        flex-direction: column;
-        /* Mude para layout de coluna em telas menores */
-    }
 
-    #paragrafo,
-    #maps {
-        width: 90%;
-        /* Ocupa 100% da largura em telas menores */
-    }
-}
 
 
 
