@@ -73,6 +73,9 @@
 
 
 
+
+
+
   <footer>
     <div class="footer-container">
       <div class="footer-logo">
@@ -93,6 +96,48 @@
       <p>&copy; 2023 Vigia Guest House. Todos os direitos reservados.</p>
       <p id="time"></p>
     </div>
+
+    <div class="menu">
+      <div class="toggle"><ion-icon name="share-social"></ion-icon></div>
+      <li style="--i:0;--clr:#1877f2;">
+          <a href="https://www.facebook.com/"><ion-icon name="logo-facebook"></ion-icon></a>
+      </li>
+      <li style="--i:1;--clr:#25d366;">
+          <a href="https://web.whatsapp.com/"><ion-icon name="logo-whatsapp"></ion-icon></a>
+      </li>
+      <li style="--i:2;--clr:#1da1f2;">
+          <a href="https://twitter.com/"><ion-icon name="logo-twitter"></ion-icon></a>
+      </li>
+      <li style="--i:3;--clr:#ea4c89;">
+          <a href="https://www.tiktok.com/"><ion-icon name="logo-tiktok"></ion-icon></a>
+      </li>
+      <li style="--i:4;--clr:#0a66c2;">
+          <a href="https://www.linkedin.com/"><ion-icon name="logo-linkedin"></ion-icon></a>
+      </li>
+      <li style="--i:5;--clr:#c32aa3;">
+          <a href="https://www.instagram.com/"><ion-icon name="logo-instagram"></ion-icon></a>
+      </li>
+      <li style="--i:6;--clr:#bd081c;">
+          <a href="https://www.pinterest.pt/"><ion-icon name="logo-pinterest"></ion-icon></a>
+      </li>
+      <li style="--i:7;--clr:#ff0000;">
+          <a href="https://www.youtube.com/"><ion-icon name="logo-youtube"></ion-icon></a>
+      </li>
+  </div>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script>
+    let toggle = document.querySelector('.toggle');
+  let menu = document.querySelector('.menu');
+  toggle.onclick = function(){
+      menu.classList.toggle('active')
+  }
+  </script>
+
+
+
+
+
 
   </footer>
 

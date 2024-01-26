@@ -9,12 +9,6 @@
     <link rel="icon" href="/paginaPrincipal/imagens/logo-removebg-preview.png" type="image/x-icon">
     <script src="/time.js" async></script>
 
-
-
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    
-    
     <title>Vigia Guest House</title>
 </head>
 
@@ -149,7 +143,6 @@
             </div>
         </section>
 
-
         <section class="ratings">
             <div class="ratings-top">
                 <img src="./imagens/icon_estrela.png" id="estrela" alt="">
@@ -225,6 +218,7 @@
             <button id="botao"><a href="/subpagina-avaliacao/avaliacao.html">Ver Mais</button></a>
             
         </section>
+        
     </main>
     
     <!--inico footer-->
@@ -233,6 +227,42 @@
         <div class="footer-container">
             <div class="footer-logo">
                 <img src="/PaginaPrincipal/imagens/logo-removebg-preview.png" alt="Logo">
+                <div class="menu">
+                    <div class="toggle"><ion-icon name="share-social"></ion-icon></div>
+                    <li style="--i:0;--clr:#1877f2;">
+                        <a href="https://www.facebook.com/"><ion-icon name="logo-facebook"></ion-icon></a>
+                    </li>
+                    <li style="--i:1;--clr:#25d366;">
+                        <a href="https://web.whatsapp.com/"><ion-icon name="logo-whatsapp"></ion-icon></a>
+                    </li>
+                    <li style="--i:2;--clr:#1da1f2;">
+                        <a href="https://twitter.com/"><ion-icon name="logo-twitter"></ion-icon></a>
+                    </li>
+                    <li style="--i:3;--clr:#ea4c89;">
+                        <a href="https://www.tiktok.com/"><ion-icon name="logo-tiktok"></ion-icon></a>
+                    </li>
+                    <li style="--i:4;--clr:#0a66c2;">
+                        <a href="https://www.linkedin.com/"><ion-icon name="logo-linkedin"></ion-icon></a>
+                    </li>
+                    <li style="--i:5;--clr:#c32aa3;">
+                        <a href="https://www.instagram.com/"><ion-icon name="logo-instagram"></ion-icon></a>
+                    </li>
+                    <li style="--i:6;--clr:#bd081c;">
+                        <a href="https://www.pinterest.pt/"><ion-icon name="logo-pinterest"></ion-icon></a>
+                    </li>
+                    <li style="--i:7;--clr:#ff0000;">
+                        <a href="https://www.youtube.com/"><ion-icon name="logo-youtube"></ion-icon></a>
+                    </li>
+                </div>
+                <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+                <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+                <script>
+                  let toggle = document.querySelector('.toggle');
+                let menu = document.querySelector('.menu');
+                toggle.onclick = function(){
+                    menu.classList.toggle('active')
+                }
+                </script>
             </div>
 
             <div class="footer-paginas">
@@ -250,9 +280,10 @@
             <p id="time"></p>
         </div>
 
-
-
-
+        
+        
+        
+      
 
 
        
