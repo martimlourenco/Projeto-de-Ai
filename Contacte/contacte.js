@@ -39,7 +39,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div>
+    <div class="oupa">
       <h1>Contacte-nos!</h1>
       <form onSubmit={handleSubmit}>
         <label>
