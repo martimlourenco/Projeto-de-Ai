@@ -219,7 +219,26 @@ nav {
 #radio4:checked~.navigation-auto .auto-btn4 {
     background-color: #fff;
 }
+@media screen and (max-width: 768px) {
+    .contentor {
+        padding-left: 3%; /* Ajustado para telas menores */
+        width: 94%; /* Ajustado para telas menores */
+    }
 
+    #slider {
+        max-width: 100%; /* Ajustado para telas menores */
+    }
+
+    .manual-navigation,
+    .navigation-auto {
+        width: 90%; /* Ajustado para telas menores */
+    }
+
+    .manual-navigation .manual-btn,
+    .navigation-auto div {
+        margin-right: 5px; /* Ajustado para telas menores */
+    }
+}
 /*  FIM DO SLIDER DE IMAGENS */
 
 
@@ -378,7 +397,7 @@ iframe {
     margin-right: 40%;
     margin-bottom: 5%;
     width: 10%;
-    height: 2vw;
+    height: 30px;
     background-color: #007EA7;
     color: white;
     border: 0;
