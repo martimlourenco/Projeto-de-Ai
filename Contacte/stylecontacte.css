@@ -82,10 +82,9 @@ nav {
 
 
 
-
 .container {
   background-color: #f9f9f9;
-  padding: 20px;
+  padding: 2%;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -98,7 +97,7 @@ h1 {
 form {
   display: flex;
   flex-direction: column;
-  max-width: 300px;
+  max-width: 20%;
   margin-top: 1%;
   margin-bottom: 5%;
   margin-left: 42%;
@@ -110,8 +109,8 @@ label {
 }
 
 input {
-  padding: 10px;
-  margin-bottom: 16px;
+  padding: 1%;
+  margin-bottom: 2%;
   margin-left: 5%;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -119,7 +118,7 @@ input {
 }
 
 #a {
-  padding: 12px 20px;
+  padding: 2% 5%;
   background-color: #007EA7;
   color: #fff;
   border: none;
