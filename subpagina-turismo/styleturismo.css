@@ -163,7 +163,7 @@ iframe{
     }
     #maps{
         flex-direction: column;
-        margin-left: -60%;
+        margin-left: -40%;
         margin-top: -20%;
     }
     #paragrafo {
@@ -175,13 +175,10 @@ iframe{
 }
  
 
-
 #maps {
-    flex-shrink: 50; /* Impede que o mapa encolha para ajustar ao espaço disponível */
-    padding-left: 67%;
+    margin-left: 67%;
     margin-top: -25%;
-    
-    
+    width: 35%;
 }
 
 .paragrafo{
