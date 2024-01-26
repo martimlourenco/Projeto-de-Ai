@@ -336,7 +336,7 @@ iframe {
 
 .ratings .ratings-bottom {
     margin-top: 3%;
-    margin: 0 3% 3% 3%; /* Ajuste conforme necessário */
+    margin-bottom: 10%;
 }
 
 .ratings-bottom .bar {
@@ -351,7 +351,7 @@ iframe {
 .ratings-bottom .direita {
     float: right;
     margin-left: 2%;
-    width: 50%;
+    width: 40%;
 }
 
 
@@ -373,10 +373,26 @@ iframe {
     position: absolute;
 }
 
+#botao{
+    margin-left: 46.5%;
+    margin-right: 40%;
+    margin-bottom: 5%;
+    width: 10%;
+    height: 2vw;
+    background-color: #007EA7;
+    color: white;
+    border: 0;
+    border-radius: 20px;
+}
 
+#botao a {
+    text-decoration: none;
+    color: white;
+}
 
-
-
+#botao:hover {
+    background-color: #003459;
+}
 
 
 

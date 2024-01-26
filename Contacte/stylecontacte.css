@@ -5,7 +5,6 @@ body{
     cursor: url('/PaginaPrincipal/imagens/cursor.png'), auto;
 }
 
-
 nav {
   height: 20%;
   width: 100%;
@@ -77,9 +76,6 @@ nav {
 .dropdown:hover .dropdown-content {
   display: block;
 }
-
-
-
 
 
 .container {
