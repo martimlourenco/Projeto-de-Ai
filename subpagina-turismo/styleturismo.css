@@ -157,7 +157,9 @@ iframe{
     iframe{
         flex-direction: column;
         height: 100px;
-        width: 100px;
+        width: 40%;
+        margin-left: 50%;
+        
     }
     #maps{
         flex-direction: column;
