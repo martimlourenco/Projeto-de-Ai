@@ -3,29 +3,75 @@ function checkAnswer(category) {
     var localRecomendado;
 
     switch (category) {
-        case 'MUSEUS':
-            localRecomendado = 'o Museu Nacional';
+        case 'TRADICIONAIS':
+            localRecomendado = 'Restaurante Mesa de Lemos';
             break;
-        case 'CAMINHADAS':
-            localRecomendado = 'a Trilha das Montanhas';
+        case 'DOCES':
+            localRecomendado = 'Casa da Alegria (confeitaria local)';
             break;
-        case 'ATIVIDADES-URBANAS':
-            localRecomendado = 'o Centro da Cidade';
+        case 'QUEIJOS':
+            localRecomendado = 'Loja do Vinho do Dão';
             break;
-        case 'MAR':
-            localRecomendado = 'o Restaurante à beira-mar';
+        case 'COZINHA':
+            localRecomendado = 'Restaurante Mira Rio';
             break;
-        case 'REGIONAL':
-            localRecomendado = 'o Restaurante de Comida Regional';
+            // Adicione mais cases conforme necessário para as outras opções
+        case 'HISTORIA':
+            localRecomendado = 'Museu Grão Vasco';
             break;
-        case 'INTERNACIONAL':
-            localRecomendado = 'o Restaurante Internacional';
+        case 'CIENCIA':
+            localRecomendado = 'Museu do Quartzo';
+            break;
+        
+        case 'CULTURA':
+            localRecomendado = 'Museu Etnográfico de Viseu';
+            break;
+        case 'EXPOSICOES':
+            localRecomendado = 'Casa da Ribeira';
+            break;
+            // Adicione mais cases conforme necessário para as outras opções
+        case 'VIVO':
+            localRecomendado = 'Teatro Viriato';
+            break;
+        case 'BARES':
+            localRecomendado = 'Bar Rossio';
+            break;
+        case 'EVENTOS':
+            localRecomendado = 'Festas e eventos especiais na Praça da República';
+            break;    
+        case 'FESTIVAIS':
+            localRecomendado = 'Festival de Sabores da Terra (eventos gastronômicos locais)';
+            break;
+            // Adicione mais cases conforme necessário para as outras opções
+        case 'PARQUES':
+            localRecomendado = 'Parque Aquilino Ribeiro';
+            break;
+        case 'ESTRELA':
+            localRecomendado = 'Parque Natural da Serra da Estrela';
+            break;
+        case 'RIO':
+            localRecomendado = 'Ecopista do Dão';
+            break;    
+        case 'JARDINS':
+            localRecomendado = 'Jardim das Mães';
             break;
         // Adicione mais cases conforme necessário para as outras opções
-
+        case 'AR':
+            localRecomendado = 'Praça da República';
+            break;
+        case 'MUSEUS':
+            localRecomendado = 'Museu Nacional Grão Vasco';
+            break;
+        case 'VIDALOUCA':
+            localRecomendado = 'Bairro de Jugueiros';
+            break;    
+        case 'COMUNITARIA':
+            localRecomendado = 'Teatro Viriato';
+            break;    
         default:
             localRecomendado = 'algum lugar interessante';
             break;
+        
     }
 
     // Exibir a mensagem de recomendação

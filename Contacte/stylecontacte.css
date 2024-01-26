@@ -3,6 +3,8 @@ body{
     margin: 0;
     font-family: 'Poppins', sans-serif;
     cursor: url('/PaginaPrincipal/imagens/cursor.png'), auto;
+    min-height: 100vh;
+    
 }
 
 
@@ -88,11 +90,12 @@ nav {
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  
 }
 
 h1 {
   text-align: center;
-  color: #333;
+  color: #003459;
 }
 
 form {
@@ -101,7 +104,7 @@ form {
   max-width: 300px;
   margin-top: 1%;
   margin-bottom: 5%;
-  margin-left: 42%;
+  margin: auto;
 }
 
 label {
@@ -120,7 +123,7 @@ input {
 
 #a {
   padding: 12px 20px;
-  background-color: #007EA7;
+  background-color: #003459;
   color: #fff;
   border: none;
   border-radius: 4px;
@@ -129,7 +132,7 @@ input {
 }
 
 #a:hover {
-  background-color: #003459;
+  background-color: #00233c;
 }
 
 
@@ -139,6 +142,8 @@ footer {
   color: #fff;
   padding: 2% 0;
   width: 100%;
+  bottom: 0;
+  
 }
 
 .footer-container {
@@ -187,3 +192,17 @@ footer {
   margin: 0 5px; /* Adicione margem entre os links */
 }
 
+
+.oupa{
+  
+  border-radius: 5px; /* Reduzido o raio da borda para telas menores */
+  background-color: white;
+  box-shadow: 0 0 5px #003459; /* Box shadow suavizado */
+  padding: 2%;/* Proporções flexíveis para o preenchimento */
+  max-width: 30%; /* Limita a largura máxima do formulário */
+  margin: 0 auto; /* Centraliza o formulário horizontalmente */
+  align-items: center;
+  text-align: center;
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
