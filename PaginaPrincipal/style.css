@@ -398,10 +398,10 @@ iframe {
     margin-bottom: 5%;
     width: 10%;
     height: 30px;
-    background-color: #007EA7;
+    background-color:  #003459;
     color: white;
     border: 0;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 
 #botao a {
@@ -410,7 +410,7 @@ iframe {
 }
 
 #botao:hover {
-    background-color: #003459;
+    background-color: #007EA7;
 }
 
 
@@ -487,3 +487,22 @@ footer {
     padding: 10px;
     margin: 0 5px; /* Adicione margem entre os links */
 }
+
+.footer-paginas a:hover {
+    color: #bdc4c5; /* Nova cor ao passar o mouse */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -245,3 +245,7 @@ footer {
     padding: 10px;
     margin: 0 5px; 
 }
+
+.footer-paginas a:hover {
+    color: #bdc4c5; /* Nova cor ao passar o mouse */
+}

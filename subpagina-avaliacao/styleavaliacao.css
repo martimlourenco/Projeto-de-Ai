@@ -167,3 +167,77 @@ footer {
     padding: 10px;
     margin: 0 5px; /* Adicione margem entre os links */
 }
+
+
+.footer-paginas a:hover {
+    color: #bdc4c5; /* Nova cor ao passar o mouse */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Adicione este bloco ao seu CSS existente */
+
+.avaliacoes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.avaliacao {
+    border: 1px solid #ddd;
+    padding: 15px;
+}
+
+.avaliacao h3 {
+    color: #007EA7;
+}
+
+.data {
+    font-style: italic;
+    color: #848484;
+}
+
+h1{
+    align-items: center;
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    color: #003459;
+    font-weight: bolder;
+}

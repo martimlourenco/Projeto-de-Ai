@@ -182,4 +182,6 @@ footer {
   margin: 0 5px; /* Adicione margem entre os links */
 }
 
-
+.footer-paginas a:hover {
+  color: #bdc4c5; /* Nova cor ao passar o mouse */
+}

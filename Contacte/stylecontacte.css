@@ -205,3 +205,6 @@ footer {
 }
 
 
+.footer-paginas a:hover {
+  color: #bdc4c5; /* Nova cor ao passar o mouse */
+}
