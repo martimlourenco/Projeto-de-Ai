@@ -150,6 +150,7 @@ section {
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
     margin-top: 3%;
     text-align: center;
+    color: #0b3f77;
 
   }
 
@@ -164,7 +165,7 @@ p{
 
 
    #a {
-    background-color: #5c4caf;
+    background-color: #0b3f77;
     color: #fff;
     padding: 10px 20px;
     font-size: 16px;
@@ -184,24 +185,40 @@ p{
   max-width: 600px;
   align-items: center;
   margin: auto;
+  animation: pulse 1s infinite alternate;
 }
 
     /* Adição para destacar respostas com o mouse */
     #a:hover {
-      background-color: #0b3f77;
+      background-color:  #5c4caf;
     }
 
  
 
     #mensagem-resposta{
-    background-color: #dbf1ff;
+    
     height: 50px;
     max-width: 600px;
     margin: auto;
     margin-top: 3%;
     margin-bottom: 3%;
     padding: 20px;
-    border-radius: 18px;
-    box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+    border-radius: 18px ;
+    box-shadow: 0 0 100px rgba(98, 97, 180, 0.811);
+    border: 4px solid #5c4caf;
+    background-image: linear-gradient(to right, #5c4caf, #dbf1ff);
+    color: #0b3f77;
+    animation: pulse 1s infinite alternate;
+    font-weight: bold;
+    
     }
+
+    @keyframes pulse {
+      from {
+          transform: scale(1);
+      }
+      to {
+          transform: scale(1.05);
+      }
+  }
     

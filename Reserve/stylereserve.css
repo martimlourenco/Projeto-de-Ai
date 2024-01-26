@@ -119,6 +119,7 @@ form {
   font-size: 1em; /* Tamanho de fonte relativo */
   margin-left: 2%; /* Margem menor para telas menores */
   cursor: pointer;
+  border-radius: 4px;
 }
 
 #a:hover {
