@@ -16,7 +16,7 @@ body {
 
 /*CABECALHO background-color: #F0F0F0;*/
 nav {
-    height: 20%;
+    height: auto;
     width: 100%;
     color: white;
     box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
@@ -26,24 +26,24 @@ nav {
 
 #foto_nav {
     color: black;
-    padding-top: 2%;
+    margin-top: 1.5%;
     padding-left: 1%;
     border-radius: 2%;
     width: 29%;
-    height: 100%;
+    height: auto;
     float: left;
 }
 
 #links {
     float: right;
-    padding-top: 4%;
+    padding-top: 2%;
     margin-right: 4%;
 }
 
 #links a {
     color: #007EA7;
     text-decoration: none;
-    padding: 1.5em;
+    padding: 2em;
 }
 
 
@@ -61,18 +61,21 @@ nav {
     font-size: 16px;
     border: none;
     cursor: pointer;
-    background-color: transparent; /* Removendo a cor de fundo padrão do botão */
+    background-color: transparent;
+    /* Removendo a cor de fundo padrão do botão */
 }
 
-.dropbtn:hover, .dropbtn:focus {
+.dropbtn:hover,x    
+.dropbtn:focus {
     color: #003459;
 }
 
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #F0F0F0; /* Cor de fundo da dropdown */
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    background-color: #F0F0F0;
+    /* Cor de fundo da dropdown */
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
 
@@ -90,177 +93,117 @@ nav {
 /* FIM DO CABECALHO */
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* SLIDER DE IMAGENS */
-
-
-.contentor {
-    padding-top: 2%;
-    padding-left: 24%;
-    width: 66.67%;
-
-}
-
-
-#slider {
-    margin: o auto;
-    width: 800px;
-    height: 400px;
-    overflow: hidden;
-    cursor: pointer;
-
-}
-
-
-.slides {
-    width: 400%;
-    height: 400px;
-    display: flex;
-}
-
-.slides input {
-    display: none;
-}
-
-.slide {
-    width: 25%;
+/* Slideshow container */
+.slideshow-container {
+    max-width: 800px;
     position: relative;
-    transition: 2s;
-}
-
-.slide img {
-    width: 800px;
-}
-
-.manual-navigation {
-    position: absolute;
-    width: 800px;
-    margin-top: -40px;
-    display: flex;
-    justify-content: center;
-}
-
-.manual-btn {
-    border: 2px solid #fff;
-    padding: 5px;
-    border-radius: 10px;
+    margin: auto;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
     cursor: pointer;
-    transition: 1s;
-}
-
-.manual-btn:not(:last-child) {
-    margin-right: 40px;
-}
-
-.manual-btn:hover {
-    background-color: #fff;
-}
-
-#radio1:checked~.first {
-    margin-left: 0;
-}
-
-#radio2:checked~.first {
-    margin-left: -25%;
-}
-
-#radio3:checked~.first {
-    margin-left: -50%;
-}
-
-#radio4:checked~.first {
-    margin-left: -75%;
-}
-
-.navigation-auto div {
-    border: 2px solid blue;
-    padding: 5px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 1s;
-}
-
-.navigation-auto {
     position: absolute;
-    width: 800px;
-    margin-top: 360px;
-    display: flex;
-    justify-content: center;
-}
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
 
-.navigation-auto div:not(:last-child) {
-    margin-right: 40px;
-}
-
-#radio1:checked~.navigation-auto .auto-btn1 {
-    background-color: #fff;
-}
-
-#radio2:checked~.navigation-auto .auto-btn2 {
-    background-color: #fff;
-}
-
-#radio3:checked~.navigation-auto .auto-btn3 {
-    background-color: #fff;
-}
-
-#radio4:checked~.navigation-auto .auto-btn4 {
-    background-color: #fff;
-}
-@media screen and (max-width: 768px) {
-    .contentor {
-        padding-left: 3%; /* Ajustado para telas menores */
-        width: 94%; /* Ajustado para telas menores */
-    }
-
-    #slider {
-        max-width: 100%; /* Ajustado para telas menores */
-    }
-
-    .manual-navigation,
-    .navigation-auto {
-        width: 90%; /* Ajustado para telas menores */
-    }
-
-    .manual-navigation .manual-btn,
-    .navigation-auto div {
-        margin-right: 5px; /* Ajustado para telas menores */
-    }
-}
-/*  FIM DO SLIDER DE IMAGENS */
 
 
 /* PARAGRAFO */
 
 #mapsepara {
     display: flex;
-    flex-wrap: wrap; /* Permite que os itens quebrem para a linha seguinte */
-    gap: 5%; /* Espaço entre os itens */
-    padding-top: 4%;
-    margin-bottom: 10%;
+    flex-wrap: wrap;
+    gap: 5%;
+    margin-top: 1;
+    margin-bottom: 5%;
 }
 
 #paragrafo {
-    width: 48%; /* Ajusta a largura do elemento para 48% da largura do contêiner pai */
+    width: 48%;
+    /* Ajusta a largura do elemento para 48% da largura do contêiner pai */
     margin-left: 10%;
 }
 
 #maps {
-    width: 37%; /* Ajusta a largura do elemento para 45% da largura do contêiner pai */
-    margin-left: auto; /* Move o elemento para a direita para ocupar o espaço restante */
-    position: relative; /* Define posição relativa para que a posição absoluta funcione */
+    width: 37%;
+    /* Ajusta a largura do elemento para 45% da largura do contêiner pai */
+    margin-left: auto;
+    /* Move o elemento para a direita para ocupar o espaço restante */
+    position: relative;
+    /* Define posição relativa para que a posição absoluta funcione */
 }
 
 #maps .mapa:hover {
@@ -271,11 +214,16 @@ nav {
 iframe {
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
     border-radius: 18px;
-    width: 85%; /* Faz com que o iframe ocupe toda a largura do contêiner pai (#maps) */
-    height: 300px; /* Defina a altura desejada para o iframe */
-    position: absolute; /* Define posição absoluta para que o iframe ocupe todo o espaço disponível */
-    top: 0; /* Alinha o iframe ao topo do contêiner pai */
-    left: 0; /* Alinha o iframe à esquerda do contêiner pai */
+    width: 85%;
+    /* Faz com que o iframe ocupe toda a largura do contêiner pai (#maps) */
+    height: 300px;
+    /* Defina a altura desejada para o iframe */
+    position: absolute;
+    /* Define posição absoluta para que o iframe ocupe todo o espaço disponível */
+    top: 0;
+    /* Alinha o iframe ao topo do contêiner pai */
+    left: 0;
+    /* Alinha o iframe à esquerda do contêiner pai */
 }
 
 
@@ -333,11 +281,13 @@ iframe {
 
 
 .ratings {
-    margin-top: 3%; /* Ajuste conforme necessário */
+    margin-top: 3%;
+    /* Ajuste conforme necessário */
 }
 
 .ratings .ratings-top {
-    margin: 0 6%; /* Ajuste conforme necessário */
+    margin: 0 6%;
+    /* Ajuste conforme necessário */
 }
 
 .ratings .ratings-top #estrela {
@@ -350,7 +300,8 @@ iframe {
 
 .ratings .ratings-top #ponto {
     width: 0.5em;
-    padding: 0 2px; /* Ajuste conforme necessário */
+    padding: 0 2px;
+    /* Ajuste conforme necessário */
 }
 
 .ratings .ratings-bottom {
@@ -359,17 +310,19 @@ iframe {
 }
 
 .ratings-bottom .bar {
-    margin: 4% 0; /* Ajuste conforme necessário */
+    margin: 4% 0;
+    /* Ajuste conforme necessário */
 }
+
 .ratings-bottom .esquerda {
     float: left;
-    margin-left: 7%;
-    width: 40%;
+    margin-left: 10%;
+    width: 50%;
 }
 
 .ratings-bottom .direita {
     float: right;
-    margin-left: 2%;
+    margin-left: 0%;
     width: 40%;
 }
 
@@ -378,27 +331,29 @@ iframe {
     position: relative;
     border-radius: 5px;
     margin: 0;
-    height: 1em;
-    width: 80%;
-    background-color: #abaaaa;
+    height: 1.5em;
+    width: 50%;
+    background-color: #ffffff;
+    border: 3px solid #007EA7;
     box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.05), 0px 1px rgba(255, 255, 255, 0.8);
 }
 
 .ratings-bottom .bar .progress-line span {
     height: 100%;
-    border-radius: 5px;
+    border-radius: 0 5px 5px 0;
     width: 80%;
-    background: #003459;
+    background: #84C2F5;
     position: absolute;
 }
 
-#botao{
-    margin-left: 46.5%;
-    margin-right: 40%;
-    margin-bottom: 5%;
+#botao {
+    margin-left: 45%;
+
+    margin-top: 5%;
+    margin-bottom: 10%;
     width: 10%;
-    height: 30px;
-    background-color:  #003459;
+    height: 40px;
+    background-color: #003459;
     color: white;
     border: 0;
     border-radius: 10px;
@@ -407,6 +362,7 @@ iframe {
 #botao a {
     text-decoration: none;
     color: white;
+    font-weight: bolder;
 }
 
 #botao:hover {
@@ -436,11 +392,12 @@ iframe {
 /* footer */
 
 footer {
+    margin-top: 8%;
     background-color: #848484;
     color: #fff;
     padding: 2% 0;
     width: 100%;
-    
+    height: auto;
 }
 
 .footer-container {
@@ -454,6 +411,7 @@ footer {
 .footer-logo img {
     width: 50px;
     height: auto;
+    margin-top: 10%;
 }
 
 .footer-logo {
@@ -463,13 +421,13 @@ footer {
 .footer-bottom {
     text-align: center;
     width: 100%;
-    
+
 }
 
 .footer-bottom p {
     margin: 0;
-    
-    
+
+
 }
 
 
@@ -489,77 +447,75 @@ footer {
     color: #ffffff;
     text-decoration: none;
     padding: 10px;
-    margin: 0 5px; /* Adicione margem entre os links */
+    margin: 0 5px;
+    /* Adicione margem entre os links */
 }
 
 .footer-paginas a:hover {
-    color: #bdc4c5; /* Nova cor ao passar o mouse */
+    color: #bdc4c5;
+    /* Nova cor ao passar o mouse */
 }
 
 
-
-
-
-.menu{
+.menu {
     position: relative;
-    height: 280px;
-    width: 280px;
+    margin-left: 10%;
+    margin-top: -12%;
+    width: 20%;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 24%;
-    margin-top: -60%;
 }
 
 
 
 .menu .toggle {
     position: relative;
-    height: 60px;
-    width: 60px;
+    height: 30px;
+    width: 30px;
     background: #fff;
     border-radius: 50%;
-    box-shadow: 0 3px 4px rgba(0,0,0,0.15);
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
     color: #333;
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 2em;
+    font-size: 1.5em;
     transition: 1.25s;
 }
 
 
-.menu.active .toggle{
+.menu.active .toggle {
     transform: rotate(360deg);
-    box-shadow: 0 6px 8px rgba(0,0,0,0.15), 0 0 0 2px #333, 0 0 0 8px #fff;
-    
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15), 0 0 0 2px #333, 0 0 0 8px #fff;
+
 }
 
-.menu li{
+.menu li {
     position: absolute;
     left: 0;
     list-style: none;
     transition: 0.5s;
     transform: rotate(calc(360deg/8 * var(--i)));
-    transform-origin: 140px;
+    transform-origin: 350%;
     scale: 0;
     transition-delay: calc(0.05s * var(--i));
 }
 
-.menu.active li{
-    scale: 1;
+.menu.active li {
+    scale: 0.5;
 }
 
 
 
 
-.menu li a{
+.menu li a {
     position: relative;
     display: flex;
     transform: rotate(calc(360deg/-8 * var(--i)));
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
     background: #fff;
     display: flex;
     align-items: center;
@@ -567,18 +523,12 @@ footer {
     border-radius: 50%;
     font-size: 1.75em;
     color: var(--clr);
-    box-shadow: 0 3px 4px rgba(0,0,0,0.15);
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
     transition: 0.5s;
 }
 
 
-.menu li:hover a{
+.menu li:hover a {
     font-size: 2.5em;
     box-shadow: 0 0 0 2px var(--clr), 0 0 0 6px #fff;
 }
-
-
-
-
-
-

@@ -34,67 +34,43 @@
         </div>
     </nav>
     <!--FIM DO CABECALHO-->
-
+    
     <!--PAGINA-->
-    <main>
-        <section class="contentor">
-            <section id="slider">
-                <div class="slides">
-                    <input type="radio" name="radio-btn" id="radio1">
-                    <input type="radio" name="radio-btn" id="radio2">
-                    <input type="radio" name="radio-btn" id="radio3">
-                    <input type="radio" name="radio-btn" id="radio4">
-                    <!--fim do radio-->
+    <main style="margin-top: 1.5%;">
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
 
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
 
-                    <!--slide de imagens-->
-                    <div class="slide first">
-                        <img src="imagens/imagem1.jpg" alt="imagem1">
-                    </div>
+                <img src="imagens/imagem3.jpg" style="width:100%">
 
-                    <div class="slide">
-                        <img src="imagens/imagem2.jpg" alt="imagem2">
-                    </div>
+            </div>
 
-                    <div class="slide">
-                        <img src="imagens/imagem3.jpg" alt="imagem3">
-                    </div>
+            <div class="mySlides fade">
 
-                    <div class="slide">
-                        <img src="imagens/imagem4.jpg" alt="imagem4">
-                    </div>
+                <img src="imagens/imagem5.jpg" style="width:100%">
 
-                    <!-- fim do slide de imagens-->
+            </div>
 
-                    <!--navigation auto-->
-                    <div class="navigation-auto">
-                        <div class="auto-btn1"></div>
-                        <div class="auto-btn2"></div>
-                        <div class="auto-btn3"></div>
-                        <div class="auto-btn4"></div>
-                    </div>
+            <div class="mySlides fade">
 
-                </div>
+                <img src="imagens/imagem4.jpg" style="width:100%">
 
-                <div class="manual-navigation">
-                    <label for="radio1" class="manual-btn"></label>
-                    <label for="radio2" class="manual-btn"></label>
-                    <label for="radio3" class="manual-btn"></label>
-                    <label for="radio4" class="manual-btn"></label>
-                </div>
+            </div>
 
-            </section>
-        </section>
+        </div>
+        <br>
+        <div style="text-align:center; margin-top: -1.5%;">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+        <br>
 
         <script src="js.js"></script>
         <!--fim do slider-->
-
-
-
-
-
-
-
+        <hr style="border: 1px solid #003459; width: 85%; margin-bottom: 3.5%;">
         <section id="mapsepara">
             <section id="paragrafo">
                 <p>Situada em Viseu, a 300 metros da Catedral de Viseu e a 400 metros da Igreja da Misericórdia de
@@ -113,7 +89,7 @@
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
             </section>
         </section>
-
+        <br><br><br>
 
 
 
@@ -133,27 +109,29 @@
                 <div class="box">
                     <img src="imagens/icon_nfumador.png" alt="">
                     <h3>Quartos para não fumadores</h3>
-                    <p>Como parte do nosso compromisso com a saúde e o conforto de todos os nossos hóspedes, todos os quartos são estritamente para não fumadores.</p>
+                    <p>Como parte do nosso compromisso com a saúde e o conforto de todos os nossos hóspedes, todos os
+                        quartos são estritamente para não fumadores.</p>
                 </div>
                 <div class="box">
                     <img src="imagens/icon_arcondicionado.png" alt="">
                     <h3>Ar condicionado</h3>
-                    <p>Todos os quartos estão equipados com ar condicionado. Independentemente da temperatura lá fora, você pode contar com um ambiente fresco e agradável dentro de nossas instalações.</p>
+                    <p>Todos os quartos estão equipados com ar condicionado. Independentemente da temperatura lá fora,
+                        você pode contar com um ambiente fresco e agradável dentro de nossas instalações.</p>
                 </div>
             </div>
         </section>
 
-        <section class="ratings">
+        <section class="ratings" style="margin-top: 5%;">
             <div class="ratings-top">
                 <img src="./imagens/icon_estrela.png" id="estrela" alt="">
                 <img src="./imagens/icon_estrela.png" id="estrela" alt="">
                 <img src="./imagens/icon_estrela.png" id="estrela" alt="">
                 <img src="./imagens/icon_estrela.png" id="estrela" alt="">
                 <img src="./imagens/icon_estrelavazia.png" id="estrelavazia" alt="">
-                <h3 style="margin-left: 13%; margin-top: -2.5%; padding-left: 2%;">4 Estrelas <img
+                <h3 style="margin-left: 11%; margin-top: -2.5%; padding-left: 2%;"> 4 Estrelas <img
                         src="./imagens/icon_ponto.png" id="ponto" alt="">193 Reviews</h3>
             </div>
-            <div class="ratings-bottom">
+            <div class="ratings-bottom" style="margin-top: -1.5%;">
                 <div class="esquerda">
                     <div class="bar">
                         <div class="info">
@@ -214,55 +192,20 @@
                         </div>
                     </div>
                 </div>
-            </div><br><br><br><br><br><br><br><br><br>
-            <button id="botao"><a href="/subpagina-avaliacao/avaliacao.html">Ver Mais</button></a>
-            
+            </div>
+            <!--<button id="botao"><a href="/subpagina-avaliacao/avaliacao.html">Ver Mais</button></a>-->
+
         </section>
-        
-    </main>
-    
+
+    </main><br><br><br><br><br><br><br><br><br>
+
     <!--inico footer-->
 
     <footer>
         <div class="footer-container">
             <div class="footer-logo">
                 <img src="/PaginaPrincipal/imagens/logo-removebg-preview.png" alt="Logo">
-                <div class="menu">
-                    <div class="toggle"><ion-icon name="share-social"></ion-icon></div>
-                    <li style="--i:0;--clr:#1877f2;">
-                        <a href="https://www.facebook.com/"><ion-icon name="logo-facebook"></ion-icon></a>
-                    </li>
-                    <li style="--i:1;--clr:#25d366;">
-                        <a href="https://web.whatsapp.com/"><ion-icon name="logo-whatsapp"></ion-icon></a>
-                    </li>
-                    <li style="--i:2;--clr:#1da1f2;">
-                        <a href="https://twitter.com/"><ion-icon name="logo-twitter"></ion-icon></a>
-                    </li>
-                    <li style="--i:3;--clr:#ea4c89;">
-                        <a href="https://www.tiktok.com/"><ion-icon name="logo-tiktok"></ion-icon></a>
-                    </li>
-                    <li style="--i:4;--clr:#0a66c2;">
-                        <a href="https://www.linkedin.com/"><ion-icon name="logo-linkedin"></ion-icon></a>
-                    </li>
-                    <li style="--i:5;--clr:#c32aa3;">
-                        <a href="https://www.instagram.com/"><ion-icon name="logo-instagram"></ion-icon></a>
-                    </li>
-                    <li style="--i:6;--clr:#bd081c;">
-                        <a href="https://www.pinterest.pt/"><ion-icon name="logo-pinterest"></ion-icon></a>
-                    </li>
-                    <li style="--i:7;--clr:#ff0000;">
-                        <a href="https://www.youtube.com/"><ion-icon name="logo-youtube"></ion-icon></a>
-                    </li>
-                </div>
-                <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-                <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-                <script>
-                  let toggle = document.querySelector('.toggle');
-                let menu = document.querySelector('.menu');
-                toggle.onclick = function(){
-                    menu.classList.toggle('active')
-                }
-                </script>
+
             </div>
 
             <div class="footer-paginas">
@@ -274,19 +217,48 @@
                 <a href="">Quiz</a>
             </div>
 
+            <div class="footer-bottom">
+
+                <p>&copy; 2023 Vigia Guest House. Todos os direitos reservados.</p>
+                <p id="time"></p>
+            </div>
+            <div class="menu">
+                <div class="toggle"><ion-icon name="share-social"></ion-icon></div>
+                <li style="--i:0;--clr:#1877f2;">
+                    <a href="https://www.facebook.com/"><ion-icon name="logo-facebook"></ion-icon></a>
+                </li>
+                <li style="--i:1;--clr:#0a66c2;">
+                    <a href="https://www.linkedin.com/"><ion-icon name="logo-linkedin"></ion-icon></a>
+                </li>
+                <li style="--i:2;--clr:#c32aa3;">
+                    <a href="https://www.instagram.com/"><ion-icon name="logo-instagram"></ion-icon></a>
+                </li>
+                <li style="--i:3;--clr:#c32aa3;">
+                    <a href="https://www.instagram.com/"><ion-icon name="logo-instagram"></ion-icon></a>
+                </li>
+                <li style="--i:4;--clr:#c32aa3;">
+                    <a href="https://www.instagram.com/"><ion-icon name="logo-instagram"></ion-icon></a>
+                </li>
+            </div>
+            <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+            <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+            <script>
+                let toggle = document.querySelector('.toggle');
+                let menu = document.querySelector('.menu');
+                toggle.onclick = function () {
+                    menu.classList.toggle('active')
+                }
+            </script>
         </div>
-        <div class="footer-bottom">
-            <p>&copy; 2023 Vigia Guest House. Todos os direitos reservados.</p>
-            <p id="time"></p>
-        </div>
-
-        
-        
-        
-      
 
 
-       
+
+
+
+
+
+
+
 
 
     </footer>

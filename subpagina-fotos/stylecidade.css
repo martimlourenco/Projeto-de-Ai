@@ -9,7 +9,7 @@ body {
 
 /*CABECALHO background-color: #F0F0F0;*/
 nav {
-  height: 20%;
+  height: auto;
   width: 100%;
   color: white;
   box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
@@ -19,24 +19,24 @@ nav {
 
 #foto_nav {
   color: black;
-  padding-top: 2%;
+  margin-top: 1.5%;
   padding-left: 1%;
   border-radius: 2%;
   width: 29%;
-  height: 100%;
+  height: auto;
   float: left;
 }
 
 #links {
   float: right;
-  padding-top: 4%;
+  padding-top: 2%;
   margin-right: 4%;
 }
 
 #links a {
   color: #007EA7;
   text-decoration: none;
-  padding: 1.5em;
+  padding: 2em;
 }
 
 

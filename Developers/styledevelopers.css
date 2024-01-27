@@ -7,7 +7,7 @@ body{
 
 
 nav {
-  height: 20%;
+  height: auto;
   width: 100%;
   color: white;
   box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
@@ -17,24 +17,24 @@ nav {
 
 #foto_nav {
   color: black;
-  padding-top: 2%;
+  margin-top: 1.5%;
   padding-left: 1%;
   border-radius: 2%;
   width: 29%;
-  height: 100%;
+  height: auto;
   float: left;
 }
 
 #links {
   float: right;
-  padding-top: 4%;
+  padding-top: 2%;
   margin-right: 4%;
 }
 
 #links a {
   color: #007EA7;
   text-decoration: none;
-  padding: 1.5em;
+  padding: 2em;
 }
 
 
@@ -82,7 +82,7 @@ nav {
 
 h2{
   text-align: center;
-  color: rgb(131, 156, 223);
+  color: #007EA7;
   font-size: 40px;
   font-family:'Franklin Gothic Medium', 'Arial Narrow', sans-serif;
   margin-bottom: 1%;
@@ -103,8 +103,8 @@ h2{
     background-color: #F0F0F0;
     height: 70%;
     width: 30%;
-    box-shadow: 0 0 100px rgba(98, 97, 180, 0.811);
-    margin-bottom: 2%;
+    box-shadow: 0 0 100px rgba(103, 103, 103, 0.811);
+    margin-bottom: 5%;
 
 }
 
