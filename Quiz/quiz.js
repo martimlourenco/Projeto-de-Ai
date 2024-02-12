@@ -1,4 +1,14 @@
+function scrollParaElemento() {
+    var elemento = document.getElementById('mensagem-resposta');
+    
+    if (elemento) {
+        elemento.scrollIntoView();
+    }
+}
+
+
 function checkAnswer(category) {
+
     // Lógica para verificar as respostas e recomendar um local
     var localRecomendado;
 
@@ -10,26 +20,23 @@ function checkAnswer(category) {
             localRecomendado = 'Casa da Alegria (confeitaria local)';
             break;
         case 'QUEIJOS':
-            localRecomendado = 'Loja do Vinho do Dão';
+            localRecomendado = 'Loja do Vinho do D&atilde;o';
             break;
         case 'COZINHA':
             localRecomendado = 'Restaurante Mira Rio';
             break;
-            // Adicione mais cases conforme necessário para as outras opções
         case 'HISTORIA':
-            localRecomendado = 'Museu Grão Vasco';
+            localRecomendado = 'Museu Gr&atilde;o Vasco';
             break;
         case 'CIENCIA':
             localRecomendado = 'Museu do Quartzo';
             break;
-        
         case 'CULTURA':
-            localRecomendado = 'Museu Etnográfico de Viseu';
+            localRecomendado = 'Museu Etnogr&aacute;fico de Viseu';
             break;
         case 'EXPOSICOES':
             localRecomendado = 'Casa da Ribeira';
             break;
-            // Adicione mais cases conforme necessário para as outras opções
         case 'VIVO':
             localRecomendado = 'Teatro Viriato';
             break;
@@ -37,12 +44,11 @@ function checkAnswer(category) {
             localRecomendado = 'Bar Rossio';
             break;
         case 'EVENTOS':
-            localRecomendado = 'Festas e eventos especiais na Praça da República';
+            localRecomendado = 'Festas e eventos especiais na Pra&ccedil;a da Rep&uacuteblica';
             break;    
         case 'FESTIVAIS':
-            localRecomendado = 'Festival de Sabores da Terra (eventos gastronômicos locais)';
+            localRecomendado = 'Festival de Sabores da Terra (eventos gastron&ocirc;micos locais)';
             break;
-            // Adicione mais cases conforme necessário para as outras opções
         case 'PARQUES':
             localRecomendado = 'Parque Aquilino Ribeiro';
             break;
@@ -50,17 +56,16 @@ function checkAnswer(category) {
             localRecomendado = 'Parque Natural da Serra da Estrela';
             break;
         case 'RIO':
-            localRecomendado = 'Ecopista do Dão';
+            localRecomendado = 'Ecopista do D&atilde;o';
             break;    
         case 'JARDINS':
-            localRecomendado = 'Jardim das Mães';
+            localRecomendado = 'Jardim das M&atilde;es';
             break;
-        // Adicione mais cases conforme necessário para as outras opções
         case 'AR':
-            localRecomendado = 'Praça da República';
+            localRecomendado = 'Pra&ccedil;a da Rep&uacuteblica';
             break;
         case 'MUSEUS':
-            localRecomendado = 'Museu Nacional Grão Vasco';
+            localRecomendado = 'Museu Nacional Gr&atilde;o Vasco';
             break;
         case 'VIDALOUCA':
             localRecomendado = 'Bairro de Jugueiros';

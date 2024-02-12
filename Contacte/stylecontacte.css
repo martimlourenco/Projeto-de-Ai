@@ -4,7 +4,7 @@ body {
   font-family: 'Poppins', sans-serif;
   cursor: url('/PaginaPrincipal/imagens/cursor.png'), auto;
   min-height: 100vh;
-
+  cursor: url('../PaginaPrincipal/imagens/cursor.png'), auto;
 }
 
 nav {
